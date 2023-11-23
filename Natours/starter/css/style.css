@@ -70,7 +70,7 @@ body {
     letter-spacing: 35px;
     animation-name: moveInLeft;
     animation-duration: 1s;
-    animation-timing-function: step-end;
+    animation-timing-function: ease-out;
     /*!*animation-delay: 3s;*!*/
     /*animation-iteration-count: 3;*/
 }
@@ -91,6 +91,7 @@ body {
     padding: 15px 40px;
     border-radius: 100px;
     transition: all .2s;
+    position: relative;
 }
 
 
@@ -104,12 +105,55 @@ body {
     box-shadow: 0 5px 10px rgb(0,0,0,.2);
 }
 
-
-
 .btn-white {
     background-color: #fff;
-    color: #777777;
+    color: #2f53a2;
 }
+
+.btn::after{
+    /*  content обязательный еклемент  */
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after{
+    background-color: #777;
+}
+
+.btn:hover::after{
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated{
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+        0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+
+
+
+
+
 
 
 @keyframes moveInLeft {
