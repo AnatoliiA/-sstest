@@ -1,4 +1,4 @@
-git rm -r --cached .idea
 
+git config --list | grep alias
 
 
