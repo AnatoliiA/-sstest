@@ -1,4 +1,4 @@
-<-- Created by Kamarali Anatolii at 16:19 23.11.2023 file: base.md
+np<-- Created by Kamarali Anatolii at 16:19 23.11.2023 file: base.md
 проект название advanced-css-course -->
 
 ```scc
