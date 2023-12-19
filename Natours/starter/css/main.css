@@ -165,6 +165,36 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
 
+.card {
+  perspective: 150rem;
+  /* @type {MozPerspective} */
+  -moz-perspective: 150 rem;
+  position: relative;
+  height: 50rem; }
+  .card__side {
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    size: 3rem;
+    height: 50rem;
+    transition: all 0.8s;
+    backface-visibility: hidden;
+    width: 100%;
+    top: 0;
+    left: 0; }
+    .card__side--front {
+      background-color: orangered; }
+    .card__side--back {
+      background-color: green;
+      transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-color: linear-gradient(to rigth bot); }
+  .card:hover .card__side--front {
+    transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0deg); }
+
 .composition {
   position: relative; }
   .composition__photo {
@@ -259,6 +289,11 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh; }
+
+.section-tours {
+  background-color: #f7f7f7;
+  padding: 25rem 0 15rem 0;
+  margin-top: -10rem; }
 
 /*
 COLORS:
