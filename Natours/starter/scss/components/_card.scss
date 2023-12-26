@@ -1,18 +1,18 @@
-.card{
+.card {
   perspective: 150rem;
-  color: #fff;
+  //color: #fff;
   /* @type {MozPerspective} */
-  -moz-perspective: 150 rem;
+  -moz-perspective: 150rem;
   position: relative;
-  height: 50rem;
+  height: 52rem;
 
-  &__side{
+  &__side {
     font-weight: bold;
     text-transform: uppercase;
     //background-color: green;
     position: absolute;
-    size: 3rem;
-    height: 50rem;
+    //size: 3rem;
+    height: 52rem;
     // Time rotation there is most simple translation animation
     transition: all 0.8s ease;
     // закругляет кончики елемента
@@ -27,60 +27,75 @@
     width: 100%;
     top: 0;
     left: 0;
-     // Important
+    // Important
     backface-visibility: hidden;
 
-    &--front{
+    &--front {
       color: black;
       background-color: $color-white;
     }
 
-    &--back{
+    &--back {
       //background-color: red;
       transform: rotateY(180deg);
 
-      &_1{
-         // espace leaad to mistake
-         background-image: linear-gradient(to right bottom , $color-secondary-light, $color-secondary-dark)
-       }
-     }
+      &-1 {
+        // space lead to mistake
+        background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark)
+      }
+      &-2 {
+        // space lead to mistake
+        background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark)
+      }
+      &-3 {
+        // space lead to mistake
+        background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark)
+      }
+    }
 
   }
 
-  &:hover &__side--front{
-     /* Карта разворачивается на 180 */
+  &:hover &__side--front {
+    /* Карта разворачивается на 180 */
     transform: rotateY(-180deg);
   }
 
-  &:hover &__side--back{
+  &:hover &__side--back {
     transform: rotateY(0deg);
   }
+
   // Front side styling
-  &__picture{
+  &__picture {
     background-size: cover;
     height: 23rem;
     // смешивает слои
     background-blend-mode: screen;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-     &--1{
-       background-image: url("../img/nat-5.jpg"),
-                         linear-gradient(to right bottom ,
-                                         $color-secondary-light,
-                                         $color-secondary-dark);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
-     }
 
-    &--2{
-       background-image: url("../img/nat-5.jpg");
+    &--1 {
+      background-image: linear-gradient(to right bottom,
+                      $color-secondary-light,
+                      $color-secondary-dark),
+      url('../img/nat-5.jpg');
     }
 
-    &--3{
-       background-image: url("../img/nat-5.jpg");
+
+    &--2 {
+      background-image: linear-gradient(to right bottom,
+                      $color-primary-light,
+                      $color-primary-dark), url("../img/nat-6.jpg");
+    }
+
+    &--3 {
+      background-image: linear-gradient(to right bottom,
+                      $color-tertiary-light,
+                      $color-tertiary-dark), url("../img/nat-7.jpg");
     }
   }
 
-  &__heading  {
+  &__heading {
     font-size: 2.8em;
     font-weight: 400;
     text-transform: uppercase;
@@ -92,34 +107,73 @@
     width: 48%;
   }
 
-  &__heading-span{
+  &__heading-span {
     padding: 1rem 1.5rem;
     -weckit-box-decoration-break: clone;
     box-decoration-break: clone;
-    &--1{
-         background-image: linear-gradient(to right bottom ,
-                                         rgba($color-secondary-light, 0.85),
-                                         rgba($color-secondary-dark, 0.85))
+
+    &--1 {
+      background-image: linear-gradient(to right bottom,
+              rgba($color-secondary-light, 0.85),
+              rgba($color-secondary-dark, 0.85))
+    }
+
+    &--2 {
+      background-image: linear-gradient(to right bottom,
+              rgba($color-primary-light, 0.85),
+              rgba($color-primary-dark, 0.85))
+    }
+
+    &--3 {
+      background-image: linear-gradient(to right bottom,
+              rgba($color-tertiary-light, 0.85),
+              rgba($color-tertiary-dark, 0.85))
     }
   }
 
-   &__details {
-        padding: 3rem;
+  &__details {
+    padding: 3rem;
 
-        ul {
-            list-style: none;
-            width: 80%;
-            margin: 0 auto;
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
 
-            li {
-                text-align: center;
-                font-size: 1.5rem;
-                padding: 1rem;
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
 
-                &:not(:last-child) {
-                    border-bottom: 1px solid $color-grey-light-2;
-                }
-            }
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-grey-light-2;
         }
+      }
+    }
+  }
+
+   // FRONT SIDE STYLING
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+    }
+
+    &__price-box {
+        text-align: center;
+        color: $color-white;
+        margin-bottom: 8rem;
+    }
+
+    &__price-only {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    &__price-value {
+        font-size: 6rem;
+        font-weight: 100;
     }
 }
