@@ -1,3 +1,7 @@
+/// Много интересных хаков
+/// @group hacks
+/// @author  Kamarali
+/// @name message-[error|warning|success|info]
 .composition {
     position: relative;
 
@@ -37,5 +41,5 @@
     &:hover &__photo:not(:hover) {
         transform: scale(.95);
     }
-    //composition:hover composition__photo:not(:hover) {
+    /// composition:hover composition__photo:not(:hover) {
 }

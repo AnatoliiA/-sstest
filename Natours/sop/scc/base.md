@@ -1,5 +1,5 @@
-np<-- Created by Kamarali Anatolii at 16:19 23.11.2023 file: base.md
-проект название advanced-css-course -->
+[//]: # (<-- Created by Kamarali Anatolii at 16:19 23.11.2023 file: base.md
+проект название advanced-css-course -->)
 
 ```scc
 {
@@ -10,3 +10,14 @@ np<-- Created by Kamarali Anatolii at 16:19 23.11.2023 file: base.md
     }
 }
 ```
+
+think --> component-driven- design 
+components is block which is used for design.
+atomic design atoms --> molecules 
+
+block {}
+block__element {}
+block__element--modifier {} modifier other version 
+
+
+object-oriented css

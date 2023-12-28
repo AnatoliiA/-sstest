@@ -1,5 +1,3 @@
-// для scss достаточно узнает без _
-// важно нужно импортировать как abstacts идет первый
 @import "abstacts/functions";
 @import "abstacts/mixins";
 @import "abstacts/variables";
@@ -9,11 +7,13 @@
 @import "base/typografy";
 @import "base/utilities";
 
+@import "components/bg-video";
 @import "components/button";
 @import "components/card";
 @import "components/composition";
 
-
+@import "components/story";
+//?ddds
 @import "layout/header";
 @import "layout/grid";
 

@@ -1,0 +1,1705 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Starter - v1.0.0</title><link rel="stylesheet" href="assets/css/main.css"><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,700" rel="stylesheet" type="text/css"><meta name="viewport" content="width=device-width"><meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible"><!-- Open Graph tags --><meta property="og:title" content="Starter - SassDoc"><meta property="og:type" content="website"><meta property="og:description" content="Release the docs!"><!-- Thanks to Sass-lang.com for the icons --><link href="assets/images/favicon.png" rel="shortcut icon"></head><body><aside class="sidebar" role="nav"><div class="sidebar__header"><h1 class="sidebar__title">Starter - 1.0.0</h1></div><div class="sidebar__body"><button type="button" class="btn-toggle js-btn-toggle" data-alt="Open all">Close all</button><p class="sidebar__item sidebar__item--heading" data-slug="api"><a href="#api">API</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="api-mixin"><a href="#api-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="api" data-name="clearfix" data-type="mixin"><a href="#api-mixin-clearfix">clearfix</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="api-variable"><a href="#api-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="api" data-name="color-primary" data-type="variable"><a href="#api-variable-color-primary">color-primary</a></li><li class="sidebar__item sassdoc__item" data-group="api" data-name="color-tertiary-light" data-type="variable"><a href="#api-variable-color-tertiary-light">color-tertiary-light</a></li><li class="sidebar__item sassdoc__item" data-group="api" data-name="color-light-80" data-type="variable"><a href="#api-variable-color-light-80">color-light-80</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="api-css"><a href="#api-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="api" data-name=".bg-video" data-type="css"><a href="#api-css-.bg-video">.bg-video</a></li><li class="sidebar__item sassdoc__item" data-group="api" data-name=".btn" data-type="css"><a href="#api-css-.btn">.btn</a></li><li class="sidebar__item sassdoc__item" data-group="api" data-name=".header" data-type="css"><a href="#api-css-.header">.header</a></li><li class="sidebar__item sassdoc__item" data-group="api" data-name=".section-about" data-type="css"><a href="#api-css-.section-about">.section-about</a></li><li class="sidebar__item sassdoc__item" data-group="api" data-name=".section-tours" data-type="css"><a href="#api-css-.section-tours">.section-tours</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="api-placeholder"><a href="#api-placeholder">placeholders</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="api" data-name="linear-gradient-primary-80" data-type="placeholder"><a href="#api-placeholder-linear-gradient-primary-80">linear-gradient-primary-80</a></li><li class="sidebar__item sassdoc__item" data-group="api" data-name="linear-gradient-primary-100" data-type="placeholder"><a href="#api-placeholder-linear-gradient-primary-100">linear-gradient-primary-100</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="api @group description"><a href="#api @group description">api @group description</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="api @group description-css"><a href="#api @group description-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="api @group description" data-name=".story" data-type="css"><a href="#api @group description-css-.story">.story</a></li><li class="sidebar__item sassdoc__item" data-group="api @group description" data-name=".row" data-type="css"><a href="#api @group description-css-.row">.row</a></li><li class="sidebar__item sassdoc__item" data-group="api @group description" data-name=".section-stories" data-type="css"><a href="#api @group description-css-.section-stories">.section-stories</a></li><li class="sidebar__item sassdoc__item" data-group="api @group description" data-name=".section-book" data-type="css"><a href="#api @group description-css-.section-book">.section-book</a></li><li class="sidebar__item sassdoc__item" data-group="api @group description" data-name=".book" data-type="css"><a href="#api @group description-css-.book">.book</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="components"><a href="#components">components</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="components-css"><a href="#components-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="components" data-name=".heading-secondary" data-type="css"><a href="#components-css-.heading-secondary">.heading-secondary</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="hacks"><a href="#hacks">Dirty Hacks &amp; Fixes</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="hacks-css"><a href="#hacks-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="hacks" data-name=".composition" data-type="css"><a href="#hacks-css-.composition">.composition</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="undefined"><a href="#undefined">Private</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-css"><a href="#undefined-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;::after" data-type="css"><a href="#undefined-css-&amp;::after">&amp;::after</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="display: inline-block;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+  }
+
+
+  &amp;:hover" data-type="css"><a href="#undefined-css-display: inline-block;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+  }
+
+
+  &amp;:hover">display: inline-block; text-decoration: none; padding: 15px 40px; border-radius: 100px; transition: all .2s; position: relative; } &amp;:hover</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;--white" data-type="css"><a href="#undefined-css-&amp;--white">&amp;--white</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="content: &quot;&quot;;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+  }
+
+
+  &amp;-animated" data-type="css"><a href="#undefined-css-content: &quot;&quot;;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+  }
+
+
+  &amp;-animated">content: &quot;&quot;; display: inline-block; height: 100%; width: 100%; border-radius: 100px; position: absolute; top: 0; left: 0; z-index: -1; transition: all .4s; } &amp;-animated</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="-moz-perspective: 150rem;
+  position: relative;
+  height: 52rem;
+
+  &amp;__side" data-type="css"><a href="#undefined-css--moz-perspective: 150rem;
+  position: relative;
+  height: 52rem;
+
+  &amp;__side">-moz-perspective: 150rem; position: relative; height: 52rem; &amp;__side</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="position: absolute;
+    /// size: 3rem;
+    height: 52rem;
+    /// Time rotation there is most simple translation animation
+    transition: all 0.8s ease;
+    /// закругляет кончики елемента
+    border-radius: 31px;
+    /// 0 x direction,  1.5 , 40 blur
+    box-shadow: 0 1.5rem 4rem $shadow-b015;
+    /// Что связаное с краями
+    overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front" data-type="css"><a href="#undefined-css-position: absolute;
+    /// size: 3rem;
+    height: 52rem;
+    /// Time rotation there is most simple translation animation
+    transition: all 0.8s ease;
+    /// закругляет кончики елемента
+    border-radius: 31px;
+    /// 0 x direction,  1.5 , 40 blur
+    box-shadow: 0 1.5rem 4rem $shadow-b015;
+    /// Что связаное с краями
+    overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front">position: absolute; /// size: 3rem; height: 52rem; /// Time rotation there is most simple translation animation transition: all 0.8s ease; /// закругляет кончики елемента border-radius: 31px; /// 0 x direction, 1.5 , 40 blur box-shadow: 0 1.5rem 4rem $shadow-b015; /// Что связаное с краями overflow: hidden; /// Вадно растянуть е width: 100%; top: 0; left: 0; /// Important backface-visibility: hidden; &amp;--front</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="height: 52rem;
+    /// Time rotation there is most simple translation animation
+    transition: all 0.8s ease;
+    /// закругляет кончики елемента
+    border-radius: 31px;
+    /// 0 x direction,  1.5 , 40 blur
+    box-shadow: 0 1.5rem 4rem $shadow-b015;
+    /// Что связаное с краями
+    overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front" data-type="css"><a href="#undefined-css-height: 52rem;
+    /// Time rotation there is most simple translation animation
+    transition: all 0.8s ease;
+    /// закругляет кончики елемента
+    border-radius: 31px;
+    /// 0 x direction,  1.5 , 40 blur
+    box-shadow: 0 1.5rem 4rem $shadow-b015;
+    /// Что связаное с краями
+    overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front">height: 52rem; /// Time rotation there is most simple translation animation transition: all 0.8s ease; /// закругляет кончики елемента border-radius: 31px; /// 0 x direction, 1.5 , 40 blur box-shadow: 0 1.5rem 4rem $shadow-b015; /// Что связаное с краями overflow: hidden; /// Вадно растянуть е width: 100%; top: 0; left: 0; /// Important backface-visibility: hidden; &amp;--front</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="transition: all 0.8s ease;
+    /// закругляет кончики елемента
+    border-radius: 31px;
+    /// 0 x direction,  1.5 , 40 blur
+    box-shadow: 0 1.5rem 4rem $shadow-b015;
+    /// Что связаное с краями
+    overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front" data-type="css"><a href="#undefined-css-transition: all 0.8s ease;
+    /// закругляет кончики елемента
+    border-radius: 31px;
+    /// 0 x direction,  1.5 , 40 blur
+    box-shadow: 0 1.5rem 4rem $shadow-b015;
+    /// Что связаное с краями
+    overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front">transition: all 0.8s ease; /// закругляет кончики елемента border-radius: 31px; /// 0 x direction, 1.5 , 40 blur box-shadow: 0 1.5rem 4rem $shadow-b015; /// Что связаное с краями overflow: hidden; /// Вадно растянуть е width: 100%; top: 0; left: 0; /// Important backface-visibility: hidden; &amp;--front</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="border-radius: 31px;
+    /// 0 x direction,  1.5 , 40 blur
+    box-shadow: 0 1.5rem 4rem $shadow-b015;
+    /// Что связаное с краями
+    overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front" data-type="css"><a href="#undefined-css-border-radius: 31px;
+    /// 0 x direction,  1.5 , 40 blur
+    box-shadow: 0 1.5rem 4rem $shadow-b015;
+    /// Что связаное с краями
+    overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front">border-radius: 31px; /// 0 x direction, 1.5 , 40 blur box-shadow: 0 1.5rem 4rem $shadow-b015; /// Что связаное с краями overflow: hidden; /// Вадно растянуть е width: 100%; top: 0; left: 0; /// Important backface-visibility: hidden; &amp;--front</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="box-shadow: 0 1.5rem 4rem $shadow-b015;
+    /// Что связаное с краями
+    overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front" data-type="css"><a href="#undefined-css-box-shadow: 0 1.5rem 4rem $shadow-b015;
+    /// Что связаное с краями
+    overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front">box-shadow: 0 1.5rem 4rem $shadow-b015; /// Что связаное с краями overflow: hidden; /// Вадно растянуть е width: 100%; top: 0; left: 0; /// Important backface-visibility: hidden; &amp;--front</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front" data-type="css"><a href="#undefined-css-overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front">overflow: hidden; /// Вадно растянуть е width: 100%; top: 0; left: 0; /// Important backface-visibility: hidden; &amp;--front</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front" data-type="css"><a href="#undefined-css-width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front">width: 100%; top: 0; left: 0; /// Important backface-visibility: hidden; &amp;--front</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="backface-visibility: hidden;
+
+    &amp;--front" data-type="css"><a href="#undefined-css-backface-visibility: hidden;
+
+    &amp;--front">backface-visibility: hidden; &amp;--front</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="transform: rotateY(180deg);
+
+      &amp;-1" data-type="css"><a href="#undefined-css-transform: rotateY(180deg);
+
+      &amp;-1">transform: rotateY(180deg); &amp;-1</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark)
+      }
+      &amp;-2" data-type="css"><a href="#undefined-css-background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark)
+      }
+      &amp;-2">background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark) } &amp;-2</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark)
+      }
+      &amp;-3" data-type="css"><a href="#undefined-css-background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark)
+      }
+      &amp;-3">background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark) } &amp;-3</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark)
+      }
+    }
+
+  }
+
+  &amp;:hover &amp;__side--front" data-type="css"><a href="#undefined-css-background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark)
+      }
+    }
+
+  }
+
+  &amp;:hover &amp;__side--front">background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark) } } } &amp;:hover &amp;__side--front</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="transform: rotateY(-180deg);
+  }
+
+  &amp;:hover &amp;__side--back" data-type="css"><a href="#undefined-css-transform: rotateY(-180deg);
+  }
+
+  &amp;:hover &amp;__side--back">transform: rotateY(-180deg); } &amp;:hover &amp;__side--back</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp;__picture" data-type="css"><a href="#undefined-css-&amp;__picture">&amp;__picture</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+
+    &amp;--1" data-type="css"><a href="#undefined-css-background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+
+    &amp;--1">background-blend-mode: screen; -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); &amp;--1</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="text-align: left;
+    &amp;:not(:last-child)" data-type="css"><a href="#undefined-css-text-align: left;
+    &amp;:not(:last-child)">text-align: left; &amp;:not(:last-child)</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="float: left;
+         background-color: $color-grey-light-1;
+
+
+        &amp;:not(:last-child)" data-type="css"><a href="#undefined-css-float: left;
+         background-color: $color-grey-light-1;
+
+
+        &amp;:not(:last-child)">float: left; background-color: $color-grey-light-1; &amp;:not(:last-child)</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="font-size: 100%;
+  height: 95vh;
+  background-image: linear-gradient(
+                  to right bottom,
+                  rgba($color-primary-light, 0.8),
+                  rgba($color-primary-dark, 0.8)
+  ),
+  url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
+
+  &amp;__logo-box" data-type="css"><a href="#undefined-css-font-size: 100%;
+  height: 95vh;
+  background-image: linear-gradient(
+                  to right bottom,
+                  rgba($color-primary-light, 0.8),
+                  rgba($color-primary-dark, 0.8)
+  ),
+  url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
+
+  &amp;__logo-box">font-size: 100%; height: 95vh; background-image: linear-gradient( to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8) ), url(../img/hero.jpg); background-size: cover; background-position: top; position: relative; -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%); clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%); &amp;__logo-box</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="padding: 0.3rem;
+  }
+
+  &amp;__logo" data-type="css"><a href="#undefined-css-padding: 0.3rem;
+  }
+
+  &amp;__logo">padding: 0.3rem; } &amp;__logo</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".section-features" data-type="css"><a href="#undefined-css-.section-features">.section-features</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="&amp; &gt; *" data-type="css"><a href="#undefined-css-&amp; &gt; *">&amp; &gt; *</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="padding: 15rem 0;
+  /// background-color: $color_grey-light-1;
+}
+
+
+/// background-size: cover == 100% same
+/// @group API @group description
+.section-book" data-type="css"><a href="#undefined-css-padding: 15rem 0;
+  /// background-color: $color_grey-light-1;
+}
+
+
+/// background-size: cover == 100% same
+/// @group API @group description
+.section-book">padding: 15rem 0; /// background-color: $color_grey-light-1; } /// background-size: cover == 100% same /// @group API @group description .section-book</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="}
+
+
+/// background-size: cover == 100% same
+/// @group API @group description
+.section-book" data-type="css"><a href="#undefined-css-}
+
+
+/// background-size: cover == 100% same
+/// @group API @group description
+.section-book">} /// background-size: cover == 100% same /// @group API @group description .section-book</a></li></ul></div></div></aside><article class="main" role="main"><header class="header" role="banner"><div class="container"><div class="sassdoc__searchbar searchbar"><label for="js-search-input" class="visually-hidden">Search</label><div class="searchbar__form" id="js-search"><input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search"><ul class="searchbar__suggestions" id="js-search-suggestions"></ul></div></div></div></header><section class="main__section"><div class="container"><p>This is my project</p></div></section><section class="main__section"><h1 class="main__heading" id="api"><div class="container">API</div></h1><div class="main__description"><div class="container"><p>pass pass</p></div></div><section class="main__sub-section" id="api-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="api-mixin-clearfix"><h3 class="item__heading"><a class="item__name" href="#mixin-clearfix">clearfix</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin clearfix($bgColor, $textColor) { 
+    /// after
+    &amp;::after {
+        content: &quot;&quot;;
+        display: table;
+        clear: both;
+    }
+ }" data-collapsed="@mixin clearfix($bgColor, $textColor) { ... }"><code>@mixin clearfix($bgColor, $textColor) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Button component.</p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter </span>Name</th><th scope="col"><span class="visually-hidden">parameter </span>Description</th><th scope="col"><span class="visually-hidden">parameter </span>Type</th><th scope="col"><span class="visually-hidden">parameter </span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$bgColor</code></th><td data-label="desc"><p>Background color of the button.</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$textColor</code></th><td data-label="desc"><p>Text color of the button. { start: 9, end: 10 }</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden"> none</span></td></tr></tbody></table></section></section><section class="main__sub-section" id="api-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="api-variable-color-primary"><h3 class="item__heading"><a class="item__name" href="#variable-color-primary">color-primary</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$color-primary: #55c57a;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Variables COLORS</p></div></section><section class="main__item container item" id="api-variable-color-tertiary-light"><h3 class="item__heading"><a class="item__name" href="#variable-color-tertiary-light">color-tertiary-light</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$color-tertiary-light: #2998ff;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>color used throughout the application.</p></div></section><section class="main__item container item" id="api-variable-color-light-80"><h3 class="item__heading"><a class="item__name" href="#variable-color-light-80">color-light-80</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$color-light-80: rgba($color-primary-light, .8);</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>section-features</p></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[placeholder]</span> <a href="#api-placeholder-linear-gradient-primary-80"><code>linear-gradient-primary-80</code></a></li></ul></section></section><section class="main__sub-section" id="api-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="api-css-.bg-video"><h3 class="item__heading"><a class="item__name" href="#css-.bg-video">.bg-video</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.15;
+  overflow: hidden;
+
+  &amp;__content{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}</code>" data-collapsed=".bg-video { ... }"><code>.bg-video { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>bg-video pass</p></div></section><section class="main__item container item" id="api-css-.btn"><h3 class="item__heading"><a class="item__name" href="#css-.btn">.btn</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.btn {
+  &amp;:link,
+  &amp;:visited {
+    /// text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+  }
+
+
+  &amp;:hover {
+    transform: translateY(-3px);
+
+    &amp;::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &amp;:hover {
+    box-shadow: 0 10px 20px rgba($color-black, .2);
+  }
+
+  &amp;:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba($color-black, .2);
+  }
+  /// btn кнопка была
+  /// @group API
+  &amp;--white {
+    background-color: $color-white;
+    color: $color-grey-dark;
+    text-transform: uppercase;
+
+    &amp;::after {
+      background-color: #777;
+    }
+  }
+
+  &amp;::after {
+    ///  content обязательный еклемент
+    content: &quot;&quot;;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+  }
+
+
+  &amp;-animated {
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+  }
+}</code>" data-collapsed=".btn { ... }"><code>.btn { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>btn кнопка основна</p></div></section><section class="main__item container item" id="api-css-.header"><h3 class="item__heading"><a class="item__name" href="#css-.header">.header</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.header {
+  ///    зависимый элемент от body
+  ///    фактически % это процент от шрифта от базового элемента
+  ///    допустим font-size: % --&gt; это от высшего body
+  font-size: 100%;
+  height: 95vh;
+  background-image: linear-gradient(
+                  to right bottom,
+                  rgba($color-primary-light, 0.8),
+                  rgba($color-primary-dark, 0.8)
+  ),
+  url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
+
+  &amp;__logo-box {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    background: #eb2f64;
+    ///
+    ///    em относительно например длинны берет от текста (font-size) по умолчанию в элементе
+    ///    em относительно текста берет от вычисленной длинны теста в высшем элементе
+    ///    rem использует базовую величину 16px
+    ///
+    padding: 0.3rem;
+  }
+
+  &amp;__logo {
+    height: 35px;
+  }
+
+  &amp;__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /// размещение текста по центру
+    text-align: center;
+  }
+}</code>" data-collapsed=".header { ... }"><code>.header { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>95% от области просмотра занимает элемент</p></div></section><section class="main__item container item" id="api-css-.section-about"><h3 class="item__heading"><a class="item__name" href="#css-.section-about">.section-about</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.section-about {
+  background-color: $color-grey-light-1;
+  padding: 25rem 0;
+  margin-top: -20vh;
+}</code>" data-collapsed=".section-about { ... }"><code>.section-about { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Here is the description On several lines if you will</p></div></section><section class="main__item container item" id="api-css-.section-tours"><h3 class="item__heading"><a class="item__name" href="#css-.section-tours">.section-tours</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.section-tours {
+  background-color: $color-grey-light-1;
+    padding: 25rem 0 15rem 0;
+    margin-top: -10rem;
+}</code>" data-collapsed=".section-tours { ... }"><code>.section-tours { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>section-stories</p></div></section></section><section class="main__sub-section" id="api-placeholder"><h2 class="main__heading--secondary"><div class="container">placeholders</div></h2><section class="main__item container item" id="api-placeholder-linear-gradient-primary-80"><h3 class="item__heading"><a class="item__name" href="#placeholder-linear-gradient-primary-80">linear-gradient-primary-80</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="%linear-gradient-primary-80 { 
+    background-image: linear-gradient(to bottom right, $color-light-80, $color-dark-80);
+ }" data-collapsed="%linear-gradient-primary-80 { ... }"><code>%linear-gradient-primary-80 { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Extend placeholder with color variables 80</p></div><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#api-variable-color-light-80"><code>color-light-80</code></a></li></ul></section><section class="main__item container item" id="api-placeholder-linear-gradient-primary-100"><h3 class="item__heading"><a class="item__name" href="#placeholder-linear-gradient-primary-100">linear-gradient-primary-100</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="%linear-gradient-primary-100 { 
+    background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
+ }" data-collapsed="%linear-gradient-primary-100 { ... }"><code>%linear-gradient-primary-100 { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Extend placeholder with color variables 100</p></div></section></section></section><section class="main__section"><h1 class="main__heading" id="api @group description"><div class="container">api @group description</div></h1><section class="main__sub-section" id="api @group description-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="api @group description-css-.story"><h3 class="item__heading"><a class="item__name" href="#css-.story">.story</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.story {
+  width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 3rem 7rem rgba($color-black, .1);
+    background-color: rgba($color-white, .4);
+    border-radius: 3px;
+    padding: 6rem 6rem 6rem 9rem;
+    font-size: $default-font-size;
+    transform: skewX(-12deg);
+
+    &amp; &gt; * {
+        transform: skewX(12deg);
+    }
+
+    &amp;__shape{
+        width: 15rem;
+        height: 15rem;
+        float: left;
+        background-color: #7ed56f;
+        transform: translate(-3px);
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        transform: translate(-3rem) skewX(12deg);
+        position: relative;
+    }
+
+    &amp;__img{
+        height: 100%;
+        transform: translate(-4rem)  scale(1.4);
+        backface-visibility: hidden;
+        transition: all .5s;
+    }
+
+    &amp;__text{
+        transform: skewX(12deg);
+    }
+
+    &amp;__caption{
+        // If the ancestor element has position:
+        // relative, the absolutely positioned
+        // element is positioned relative to the relative element. This means its top, right, bottom, and left properties are calculated with respect to the edges of the relatively positioned element.
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        text-align: center;
+        opacity: 0;
+        transition: all .5s;
+        backface-visibility: hidden;
+    }
+
+    &amp;:hover &amp;__caption {
+        opacity: 1;
+        transform: translate(-50%, 20%);
+    }
+
+    &amp;:hover &amp;__img {
+        transform: translate(-4rem)  scale(1);
+        filter: blur(3px) brightness(80%);
+    }
+}</code>" data-collapsed=".story { ... }"><code>.story { ... }</code></pre></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Kamarali story wuth 75</p></li></ul></section><section class="main__item container item" id="api @group description-css-.row"><h3 class="item__heading"><a class="item__name" href="#css-.row">.row</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.row {
+  max-width: $grid-width;
+    margin: 0 auto;
+    /// добавил сам  text-align: left;
+    text-align: left;
+    &amp;:not(:last-child) {
+        margin-bottom: $gutter-vertical;
+    }
+
+    @include clearfix;
+
+    [class^=&quot;col-&quot;] {
+         /// background-color: orangered;
+         float: left;
+         background-color: $color-grey-light-1;
+
+
+        &amp;:not(:last-child) {
+            margin-right: $gutter-horizontal;
+        }
+    }
+
+    .col-1-of-2 {
+        width: calc((100% - #{$gutter-horizontal}) / 2);
+    }
+
+    .col-1-of-3 {
+        width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+    }
+
+    .col-2-of-3 {
+        width: calc(2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal});
+    }
+
+    .col-1-of-4 {
+        width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
+    }
+
+    .col-2-of-4 {
+        width: calc(2 * ((100% - 3 * #{$gutter-horizontal}) / 4) + #{$gutter-horizontal});
+    }
+
+    .col-3-of-4 {
+        width: calc(3 * ((100% - 3 * #{$gutter-horizontal}) / 4) + 2 * #{$gutter-horizontal});
+    }
+}</code>" data-collapsed=".row { ... }"><code>.row { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>story pass</p></div><h3 class="item__sub-heading">TODO's</h3><ul class="list-unstyled"><li><p>_grid.scss</p></li></ul><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Kamarali</p></li></ul></section><section class="main__item container item" id="api @group description-css-.section-stories"><h3 class="item__heading"><a class="item__name" href="#css-.section-stories">.section-stories</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.section-stories {
+  position: relative;
+  /// 15 rem top and bottom and 0 left and rigth
+  padding: 15rem 0;
+  /// background-color: $color_grey-light-1;
+}</code>" data-collapsed=".section-stories { ... }"><code>.section-stories { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>section-stories</p></div></section><section class="main__item container item" id="api @group description-css-.section-book"><h3 class="item__heading"><a class="item__name" href="#css-.section-book">.section-book</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.section-book {
+  @extend %linear-gradient-primary-100;
+    background-size: cover;
+    padding: 15rem 0;
+}</code>" data-collapsed=".section-book { ... }"><code>.section-book { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>background-size: cover == 100% same</p></div></section><section class="main__item container item" id="api @group description-css-.book"><h3 class="item__heading"><a class="item__name" href="#css-.book">.book</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.book {
+  background-image: linear-gradient(105deg,   rgba($color-white, 0.9) 0%,
+                                              rgba($color-white, 0.9) 50%,
+                                              transparent 50%), url(&quot;../img/nat-10.jpg&quot;);
+  background-size: cover;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+  border-radius: 3px;
+  height: 50rem;
+
+  &amp;__form {
+    width: 50%;
+    padding: 6rem;
+  }
+}</code>" data-collapsed=".book { ... }"><code>.book { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>свойстов background-size способно мультплицировать картинку</p></div></section></section></section><section class="main__section"><h1 class="main__heading" id="components"><div class="container">components</div></h1><section class="main__sub-section" id="components-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="components-css-.heading-secondary"><h3 class="item__heading"><a class="item__name" href="#css-.heading-secondary">.heading-secondary</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.heading-secondary {
+  font-size: 3.5rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;я
+
+    &amp;:hover {
+        transform: skewY(2deg) skewX(1deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    }
+}</code>" data-collapsed=".heading-secondary { ... }"><code>.heading-secondary { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Button component.</p></div></section></section></section><section class="main__section"><h1 class="main__heading" id="hacks"><div class="container">Dirty Hacks &amp; Fixes</div></h1><section class="main__sub-section" id="hacks-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="hacks-css-.composition"><h3 class="item__heading"><a class="item__name" href="#css-.composition">.composition</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.composition {
+  position: relative;
+
+    &amp;__photo {
+        width: 55%;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        border-radius: 2px;
+        position: absolute;
+        z-index: 10;
+        transition: all .2s;
+        outline-offset: 2rem;
+
+        &amp;--p1 {
+            left: 0;
+            top: -2rem;
+        }
+
+        &amp;--p2 {
+            right: 0;
+            top: 2rem;
+        }
+
+        &amp;--p3 {
+            left: 20%;
+            top: 10rem;
+        }
+
+        &amp;:hover {
+            outline: 1.5rem solid $color-primary;
+            transform: scale(1.05) translateY(-.5rem);
+            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+            z-index: 20;
+        }
+
+    }
+
+    &amp;:hover &amp;__photo:not(:hover) {
+        transform: scale(.95);
+    }
+    /// composition:hover composition__photo:not(:hover) {
+}</code>" data-collapsed=".composition { ... }"><code>.composition { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Много интересных хаков</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Kamarali</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="undefined"><div class="container">Private</div></h1><section class="main__sub-section" id="undefined-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="undefined-css-&amp;::after"><h3 class="item__heading"><a class="item__name" href="#css-&amp;::after">&amp;::after</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;::after {
+  content: &quot;&quot;;
+        display: table;
+        clear: both;
+}</code>" data-collapsed="&amp;::after { ... }"><code>&amp;::after { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>after</p></div></section><section class="main__item container item" id="undefined-css-display: inline-block;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+  }
+
+
+  &amp;:hover"><h3 class="item__heading"><a class="item__name" href="#css-display: inline-block;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+  }
+
+
+  &amp;:hover">display: inline-block; text-decoration: none; padding: 15px 40px; border-radius: 100px; transition: all .2s; position: relative; } &amp;:hover</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>display: inline-block;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+  }
+
+
+  &amp;:hover {
+  transform: translateY(-3px);
+
+    &amp;::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+}</code>" data-collapsed="display: inline-block;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+  }
+
+
+  &amp;:hover { ... }"><code>display: inline-block;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+  }
+
+
+  &amp;:hover { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>text-transform: uppercase;</p></div></section><section class="main__item container item" id="undefined-css-&amp;--white"><h3 class="item__heading"><a class="item__name" href="#css-&amp;--white">&amp;--white</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;--white {
+  background-color: $color-white;
+    color: $color-grey-dark;
+    text-transform: uppercase;
+
+    &amp;::after {
+      background-color: #777;
+    }
+}</code>" data-collapsed="&amp;--white { ... }"><code>&amp;--white { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>btn кнопка была @group API</p></div></section><section class="main__item container item" id="undefined-css-content: &quot;&quot;;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+  }
+
+
+  &amp;-animated"><h3 class="item__heading"><a class="item__name" href="#css-content: &quot;&quot;;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+  }
+
+
+  &amp;-animated">content: &quot;&quot;; display: inline-block; height: 100%; width: 100%; border-radius: 100px; position: absolute; top: 0; left: 0; z-index: -1; transition: all .4s; } &amp;-animated</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>content: &quot;&quot;;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+  }
+
+
+  &amp;-animated {
+  animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}</code>" data-collapsed="content: &quot;&quot;;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+  }
+
+
+  &amp;-animated { ... }"><code>content: &quot;&quot;;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+  }
+
+
+  &amp;-animated { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>content обязательный еклемент</p></div></section><section class="main__item container item" id="undefined-css--moz-perspective: 150rem;
+  position: relative;
+  height: 52rem;
+
+  &amp;__side"><h3 class="item__heading"><a class="item__name" href="#css--moz-perspective: 150rem;
+  position: relative;
+  height: 52rem;
+
+  &amp;__side">-moz-perspective: 150rem; position: relative; height: 52rem; &amp;__side</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>-moz-perspective: 150rem;
+  position: relative;
+  height: 52rem;
+
+  &amp;__side {
+  font-weight: bold;
+    text-transform: uppercase;
+    /// background-color: green;
+    position: absolute;
+    /// size: 3rem;
+    height: 52rem;
+    /// Time rotation there is most simple translation animation
+    transition: all 0.8s ease;
+    /// закругляет кончики елемента
+    border-radius: 31px;
+    /// 0 x direction,  1.5 , 40 blur
+    box-shadow: 0 1.5rem 4rem $shadow-b015;
+    /// Что связаное с краями
+    overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front {
+      color: black;
+      background-color: $color-white;
+    }
+
+    &amp;--back {
+      /// background-color: red;
+      transform: rotateY(180deg);
+
+      &amp;-1 {
+        /// space lead to mistake
+        background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark)
+      }
+      &amp;-2 {
+        /// space lead to mistake
+        background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark)
+      }
+      &amp;-3 {
+        /// space lead to mistake
+        background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark)
+      }
+    }
+}</code>" data-collapsed="-moz-perspective: 150rem;
+  position: relative;
+  height: 52rem;
+
+  &amp;__side { ... }"><code>-moz-perspective: 150rem;
+  position: relative;
+  height: 52rem;
+
+  &amp;__side { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>color: #fff; @type {MozPerspective}</p></div></section><section class="main__item container item" id="undefined-css-position: absolute;
+    /// size: 3rem;
+    height: 52rem;
+    /// Time rotation there is most simple translation animation
+    transition: all 0.8s ease;
+    /// закругляет кончики елемента
+    border-radius: 31px;
+    /// 0 x direction,  1.5 , 40 blur
+    box-shadow: 0 1.5rem 4rem $shadow-b015;
+    /// Что связаное с краями
+    overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front"><h3 class="item__heading"><a class="item__name" href="#css-position: absolute;
+    /// size: 3rem;
+    height: 52rem;
+    /// Time rotation there is most simple translation animation
+    transition: all 0.8s ease;
+    /// закругляет кончики елемента
+    border-radius: 31px;
+    /// 0 x direction,  1.5 , 40 blur
+    box-shadow: 0 1.5rem 4rem $shadow-b015;
+    /// Что связаное с краями
+    overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front">position: absolute; /// size: 3rem; height: 52rem; /// Time rotation there is most simple translation animation transition: all 0.8s ease; /// закругляет кончики елемента border-radius: 31px; /// 0 x direction, 1.5 , 40 blur box-shadow: 0 1.5rem 4rem $shadow-b015; /// Что связаное с краями overflow: hidden; /// Вадно растянуть е width: 100%; top: 0; left: 0; /// Important backface-visibility: hidden; &amp;--front</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>position: absolute;
+    /// size: 3rem;
+    height: 52rem;
+    /// Time rotation there is most simple translation animation
+    transition: all 0.8s ease;
+    /// закругляет кончики елемента
+    border-radius: 31px;
+    /// 0 x direction,  1.5 , 40 blur
+    box-shadow: 0 1.5rem 4rem $shadow-b015;
+    /// Что связаное с краями
+    overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front {
+  color: black;
+      background-color: $color-white;
+}</code>" data-collapsed="position: absolute;
+    /// size: 3rem;
+    height: 52rem;
+    /// Time rotation there is most simple translation animation
+    transition: all 0.8s ease;
+    /// закругляет кончики елемента
+    border-radius: 31px;
+    /// 0 x direction,  1.5 , 40 blur
+    box-shadow: 0 1.5rem 4rem $shadow-b015;
+    /// Что связаное с краями
+    overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front { ... }"><code>position: absolute;
+    /// size: 3rem;
+    height: 52rem;
+    /// Time rotation there is most simple translation animation
+    transition: all 0.8s ease;
+    /// закругляет кончики елемента
+    border-radius: 31px;
+    /// 0 x direction,  1.5 , 40 blur
+    box-shadow: 0 1.5rem 4rem $shadow-b015;
+    /// Что связаное с краями
+    overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>background-color: green;</p></div></section><section class="main__item container item" id="undefined-css-height: 52rem;
+    /// Time rotation there is most simple translation animation
+    transition: all 0.8s ease;
+    /// закругляет кончики елемента
+    border-radius: 31px;
+    /// 0 x direction,  1.5 , 40 blur
+    box-shadow: 0 1.5rem 4rem $shadow-b015;
+    /// Что связаное с краями
+    overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front"><h3 class="item__heading"><a class="item__name" href="#css-height: 52rem;
+    /// Time rotation there is most simple translation animation
+    transition: all 0.8s ease;
+    /// закругляет кончики елемента
+    border-radius: 31px;
+    /// 0 x direction,  1.5 , 40 blur
+    box-shadow: 0 1.5rem 4rem $shadow-b015;
+    /// Что связаное с краями
+    overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front">height: 52rem; /// Time rotation there is most simple translation animation transition: all 0.8s ease; /// закругляет кончики елемента border-radius: 31px; /// 0 x direction, 1.5 , 40 blur box-shadow: 0 1.5rem 4rem $shadow-b015; /// Что связаное с краями overflow: hidden; /// Вадно растянуть е width: 100%; top: 0; left: 0; /// Important backface-visibility: hidden; &amp;--front</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>height: 52rem;
+    /// Time rotation there is most simple translation animation
+    transition: all 0.8s ease;
+    /// закругляет кончики елемента
+    border-radius: 31px;
+    /// 0 x direction,  1.5 , 40 blur
+    box-shadow: 0 1.5rem 4rem $shadow-b015;
+    /// Что связаное с краями
+    overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front {
+  color: black;
+      background-color: $color-white;
+}</code>" data-collapsed="height: 52rem;
+    /// Time rotation there is most simple translation animation
+    transition: all 0.8s ease;
+    /// закругляет кончики елемента
+    border-radius: 31px;
+    /// 0 x direction,  1.5 , 40 blur
+    box-shadow: 0 1.5rem 4rem $shadow-b015;
+    /// Что связаное с краями
+    overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front { ... }"><code>height: 52rem;
+    /// Time rotation there is most simple translation animation
+    transition: all 0.8s ease;
+    /// закругляет кончики елемента
+    border-radius: 31px;
+    /// 0 x direction,  1.5 , 40 blur
+    box-shadow: 0 1.5rem 4rem $shadow-b015;
+    /// Что связаное с краями
+    overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>size: 3rem;</p></div></section><section class="main__item container item" id="undefined-css-transition: all 0.8s ease;
+    /// закругляет кончики елемента
+    border-radius: 31px;
+    /// 0 x direction,  1.5 , 40 blur
+    box-shadow: 0 1.5rem 4rem $shadow-b015;
+    /// Что связаное с краями
+    overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front"><h3 class="item__heading"><a class="item__name" href="#css-transition: all 0.8s ease;
+    /// закругляет кончики елемента
+    border-radius: 31px;
+    /// 0 x direction,  1.5 , 40 blur
+    box-shadow: 0 1.5rem 4rem $shadow-b015;
+    /// Что связаное с краями
+    overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front">transition: all 0.8s ease; /// закругляет кончики елемента border-radius: 31px; /// 0 x direction, 1.5 , 40 blur box-shadow: 0 1.5rem 4rem $shadow-b015; /// Что связаное с краями overflow: hidden; /// Вадно растянуть е width: 100%; top: 0; left: 0; /// Important backface-visibility: hidden; &amp;--front</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>transition: all 0.8s ease;
+    /// закругляет кончики елемента
+    border-radius: 31px;
+    /// 0 x direction,  1.5 , 40 blur
+    box-shadow: 0 1.5rem 4rem $shadow-b015;
+    /// Что связаное с краями
+    overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front {
+  color: black;
+      background-color: $color-white;
+}</code>" data-collapsed="transition: all 0.8s ease;
+    /// закругляет кончики елемента
+    border-radius: 31px;
+    /// 0 x direction,  1.5 , 40 blur
+    box-shadow: 0 1.5rem 4rem $shadow-b015;
+    /// Что связаное с краями
+    overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front { ... }"><code>transition: all 0.8s ease;
+    /// закругляет кончики елемента
+    border-radius: 31px;
+    /// 0 x direction,  1.5 , 40 blur
+    box-shadow: 0 1.5rem 4rem $shadow-b015;
+    /// Что связаное с краями
+    overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Time rotation there is most simple translation animation</p></div></section><section class="main__item container item" id="undefined-css-border-radius: 31px;
+    /// 0 x direction,  1.5 , 40 blur
+    box-shadow: 0 1.5rem 4rem $shadow-b015;
+    /// Что связаное с краями
+    overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front"><h3 class="item__heading"><a class="item__name" href="#css-border-radius: 31px;
+    /// 0 x direction,  1.5 , 40 blur
+    box-shadow: 0 1.5rem 4rem $shadow-b015;
+    /// Что связаное с краями
+    overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front">border-radius: 31px; /// 0 x direction, 1.5 , 40 blur box-shadow: 0 1.5rem 4rem $shadow-b015; /// Что связаное с краями overflow: hidden; /// Вадно растянуть е width: 100%; top: 0; left: 0; /// Important backface-visibility: hidden; &amp;--front</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>border-radius: 31px;
+    /// 0 x direction,  1.5 , 40 blur
+    box-shadow: 0 1.5rem 4rem $shadow-b015;
+    /// Что связаное с краями
+    overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front {
+  color: black;
+      background-color: $color-white;
+}</code>" data-collapsed="border-radius: 31px;
+    /// 0 x direction,  1.5 , 40 blur
+    box-shadow: 0 1.5rem 4rem $shadow-b015;
+    /// Что связаное с краями
+    overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front { ... }"><code>border-radius: 31px;
+    /// 0 x direction,  1.5 , 40 blur
+    box-shadow: 0 1.5rem 4rem $shadow-b015;
+    /// Что связаное с краями
+    overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>закругляет кончики елемента</p></div></section><section class="main__item container item" id="undefined-css-box-shadow: 0 1.5rem 4rem $shadow-b015;
+    /// Что связаное с краями
+    overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front"><h3 class="item__heading"><a class="item__name" href="#css-box-shadow: 0 1.5rem 4rem $shadow-b015;
+    /// Что связаное с краями
+    overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front">box-shadow: 0 1.5rem 4rem $shadow-b015; /// Что связаное с краями overflow: hidden; /// Вадно растянуть е width: 100%; top: 0; left: 0; /// Important backface-visibility: hidden; &amp;--front</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>box-shadow: 0 1.5rem 4rem $shadow-b015;
+    /// Что связаное с краями
+    overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front {
+  color: black;
+      background-color: $color-white;
+}</code>" data-collapsed="box-shadow: 0 1.5rem 4rem $shadow-b015;
+    /// Что связаное с краями
+    overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front { ... }"><code>box-shadow: 0 1.5rem 4rem $shadow-b015;
+    /// Что связаное с краями
+    overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>0 x direction, 1.5 , 40 blur</p></div></section><section class="main__item container item" id="undefined-css-overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front"><h3 class="item__heading"><a class="item__name" href="#css-overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front">overflow: hidden; /// Вадно растянуть е width: 100%; top: 0; left: 0; /// Important backface-visibility: hidden; &amp;--front</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front {
+  color: black;
+      background-color: $color-white;
+}</code>" data-collapsed="overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front { ... }"><code>overflow: hidden;
+
+    /// Вадно растянуть е
+    width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Что связаное с краями</p></div></section><section class="main__item container item" id="undefined-css-width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front"><h3 class="item__heading"><a class="item__name" href="#css-width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front">width: 100%; top: 0; left: 0; /// Important backface-visibility: hidden; &amp;--front</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front {
+  color: black;
+      background-color: $color-white;
+}</code>" data-collapsed="width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front { ... }"><code>width: 100%;
+    top: 0;
+    left: 0;
+    ///  Important
+    backface-visibility: hidden;
+
+    &amp;--front { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Вадно растянуть е</p></div></section><section class="main__item container item" id="undefined-css-backface-visibility: hidden;
+
+    &amp;--front"><h3 class="item__heading"><a class="item__name" href="#css-backface-visibility: hidden;
+
+    &amp;--front">backface-visibility: hidden; &amp;--front</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>backface-visibility: hidden;
+
+    &amp;--front {
+  color: black;
+      background-color: $color-white;
+}</code>" data-collapsed="backface-visibility: hidden;
+
+    &amp;--front { ... }"><code>backface-visibility: hidden;
+
+    &amp;--front { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Important</p></div></section><section class="main__item container item" id="undefined-css-transform: rotateY(180deg);
+
+      &amp;-1"><h3 class="item__heading"><a class="item__name" href="#css-transform: rotateY(180deg);
+
+      &amp;-1">transform: rotateY(180deg); &amp;-1</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>transform: rotateY(180deg);
+
+      &amp;-1 {
+  /// space lead to mistake
+        background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark)
+}</code>" data-collapsed="transform: rotateY(180deg);
+
+      &amp;-1 { ... }"><code>transform: rotateY(180deg);
+
+      &amp;-1 { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>background-color: red;</p></div></section><section class="main__item container item" id="undefined-css-background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark)
+      }
+      &amp;-2"><h3 class="item__heading"><a class="item__name" href="#css-background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark)
+      }
+      &amp;-2">background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark) } &amp;-2</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark)
+      }
+      &amp;-2 {
+  /// space lead to mistake
+        background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark)
+}</code>" data-collapsed="background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark)
+      }
+      &amp;-2 { ... }"><code>background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark)
+      }
+      &amp;-2 { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>space lead to mistake</p></div></section><section class="main__item container item" id="undefined-css-background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark)
+      }
+      &amp;-3"><h3 class="item__heading"><a class="item__name" href="#css-background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark)
+      }
+      &amp;-3">background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark) } &amp;-3</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark)
+      }
+      &amp;-3 {
+  /// space lead to mistake
+        background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark)
+}</code>" data-collapsed="background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark)
+      }
+      &amp;-3 { ... }"><code>background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark)
+      }
+      &amp;-3 { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>space lead to mistake</p></div></section><section class="main__item container item" id="undefined-css-background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark)
+      }
+    }
+
+  }
+
+  &amp;:hover &amp;__side--front"><h3 class="item__heading"><a class="item__name" href="#css-background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark)
+      }
+    }
+
+  }
+
+  &amp;:hover &amp;__side--front">background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark) } } } &amp;:hover &amp;__side--front</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark)
+      }
+    }
+
+  }
+
+  &amp;:hover &amp;__side--front {
+  /// Карта разворачивается на 180
+    transform: rotateY(-180deg);
+}</code>" data-collapsed="background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark)
+      }
+    }
+
+  }
+
+  &amp;:hover &amp;__side--front { ... }"><code>background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark)
+      }
+    }
+
+  }
+
+  &amp;:hover &amp;__side--front { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>space lead to mistake</p></div></section><section class="main__item container item" id="undefined-css-transform: rotateY(-180deg);
+  }
+
+  &amp;:hover &amp;__side--back"><h3 class="item__heading"><a class="item__name" href="#css-transform: rotateY(-180deg);
+  }
+
+  &amp;:hover &amp;__side--back">transform: rotateY(-180deg); } &amp;:hover &amp;__side--back</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>transform: rotateY(-180deg);
+  }
+
+  &amp;:hover &amp;__side--back {
+  transform: rotateY(0deg);
+}</code>" data-collapsed="transform: rotateY(-180deg);
+  }
+
+  &amp;:hover &amp;__side--back { ... }"><code>transform: rotateY(-180deg);
+  }
+
+  &amp;:hover &amp;__side--back { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Карта разворачивается на 180</p></div></section><section class="main__item container item" id="undefined-css-&amp;__picture"><h3 class="item__heading"><a class="item__name" href="#css-&amp;__picture">&amp;__picture</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp;__picture {
+  background-size: cover;
+    height: 23rem;
+    /// смешивает слои
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+
+    &amp;--1 {
+      background-image: linear-gradient(to right bottom,
+                      $color-secondary-light,
+                      $color-secondary-dark),
+      url(&#39;../img/nat-5.jpg&#39;);
+    }
+
+
+    &amp;--2 {
+      background-image: linear-gradient(to right bottom,
+                      $color-primary-light,
+                      $color-primary-dark), url(&quot;../img/nat-6.jpg&quot;);
+    }
+
+    &amp;--3 {
+      background-image: linear-gradient(to right bottom,
+                      $color-tertiary-light,
+                      $color-tertiary-dark), url(&quot;../img/nat-7.jpg&quot;);
+    }
+}</code>" data-collapsed="&amp;__picture { ... }"><code>&amp;__picture { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Front side styling</p></div></section><section class="main__item container item" id="undefined-css-background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+
+    &amp;--1"><h3 class="item__heading"><a class="item__name" href="#css-background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+
+    &amp;--1">background-blend-mode: screen; -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); &amp;--1</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+
+    &amp;--1 {
+  background-image: linear-gradient(to right bottom,
+                      $color-secondary-light,
+                      $color-secondary-dark),
+      url(&#39;../img/nat-5.jpg&#39;);
+}</code>" data-collapsed="background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+
+    &amp;--1 { ... }"><code>background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+
+    &amp;--1 { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>смешивает слои</p></div></section><section class="main__item container item" id="undefined-css-text-align: left;
+    &amp;:not(:last-child)"><h3 class="item__heading"><a class="item__name" href="#css-text-align: left;
+    &amp;:not(:last-child)">text-align: left; &amp;:not(:last-child)</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>text-align: left;
+    &amp;:not(:last-child) {
+  margin-bottom: $gutter-vertical;
+}</code>" data-collapsed="text-align: left;
+    &amp;:not(:last-child) { ... }"><code>text-align: left;
+    &amp;:not(:last-child) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>добавил сам text-align: left;</p></div></section><section class="main__item container item" id="undefined-css-float: left;
+         background-color: $color-grey-light-1;
+
+
+        &amp;:not(:last-child)"><h3 class="item__heading"><a class="item__name" href="#css-float: left;
+         background-color: $color-grey-light-1;
+
+
+        &amp;:not(:last-child)">float: left; background-color: $color-grey-light-1; &amp;:not(:last-child)</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>float: left;
+         background-color: $color-grey-light-1;
+
+
+        &amp;:not(:last-child) {
+  margin-right: $gutter-horizontal;
+}</code>" data-collapsed="float: left;
+         background-color: $color-grey-light-1;
+
+
+        &amp;:not(:last-child) { ... }"><code>float: left;
+         background-color: $color-grey-light-1;
+
+
+        &amp;:not(:last-child) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>background-color: orangered;</p></div></section><section class="main__item container item" id="undefined-css-font-size: 100%;
+  height: 95vh;
+  background-image: linear-gradient(
+                  to right bottom,
+                  rgba($color-primary-light, 0.8),
+                  rgba($color-primary-dark, 0.8)
+  ),
+  url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
+
+  &amp;__logo-box"><h3 class="item__heading"><a class="item__name" href="#css-font-size: 100%;
+  height: 95vh;
+  background-image: linear-gradient(
+                  to right bottom,
+                  rgba($color-primary-light, 0.8),
+                  rgba($color-primary-dark, 0.8)
+  ),
+  url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
+
+  &amp;__logo-box">font-size: 100%; height: 95vh; background-image: linear-gradient( to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8) ), url(../img/hero.jpg); background-size: cover; background-position: top; position: relative; -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%); clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%); &amp;__logo-box</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>font-size: 100%;
+  height: 95vh;
+  background-image: linear-gradient(
+                  to right bottom,
+                  rgba($color-primary-light, 0.8),
+                  rgba($color-primary-dark, 0.8)
+  ),
+  url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
+
+  &amp;__logo-box {
+  position: absolute;
+    top: 40px;
+    left: 40px;
+    background: #eb2f64;
+    ///
+    ///    em относительно например длинны берет от текста (font-size) по умолчанию в элементе
+    ///    em относительно текста берет от вычисленной длинны теста в высшем элементе
+    ///    rem использует базовую величину 16px
+    ///
+    padding: 0.3rem;
+}</code>" data-collapsed="font-size: 100%;
+  height: 95vh;
+  background-image: linear-gradient(
+                  to right bottom,
+                  rgba($color-primary-light, 0.8),
+                  rgba($color-primary-dark, 0.8)
+  ),
+  url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
+
+  &amp;__logo-box { ... }"><code>font-size: 100%;
+  height: 95vh;
+  background-image: linear-gradient(
+                  to right bottom,
+                  rgba($color-primary-light, 0.8),
+                  rgba($color-primary-dark, 0.8)
+  ),
+  url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
+
+  &amp;__logo-box { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>зависимый элемент от body фактически % это процент от шрифта от базового элемента допустим font-size: % --&gt; это от высшего body</p></div></section><section class="main__item container item" id="undefined-css-padding: 0.3rem;
+  }
+
+  &amp;__logo"><h3 class="item__heading"><a class="item__name" href="#css-padding: 0.3rem;
+  }
+
+  &amp;__logo">padding: 0.3rem; } &amp;__logo</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>padding: 0.3rem;
+  }
+
+  &amp;__logo {
+  height: 35px;
+}</code>" data-collapsed="padding: 0.3rem;
+  }
+
+  &amp;__logo { ... }"><code>padding: 0.3rem;
+  }
+
+  &amp;__logo { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>em относительно например длинны берет от текста (font-size) по умолчанию в элементе em относительно текста берет от вычисленной длинны теста в высшем элементе rem использует базовую величину 16px</p></div></section><section class="main__item container item" id="undefined-css-.section-features"><h3 class="item__heading"><a class="item__name" href="#css-.section-features">.section-features</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.section-features {
+  padding: 20rem 0;
+  // сочетание дает одно и тоже
+  @extend %linear-gradient-primary-80;
+  background-image: url(&quot;../img/nat-4.jpg&quot;);
+  background-size: cover;
+  transform: skewY(-7deg);
+   /// Only direct children of that parent (&gt; *)
+   /// And applies the skewY(-7deg) transform to those children
+  &amp; &gt; * {
+     transform: skewY(-7deg);
+  }
+}</code>" data-collapsed=".section-features { ... }"><code>.section-features { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Component class Section styles</p></div></section><section class="main__item container item" id="undefined-css-&amp; &gt; *"><h3 class="item__heading"><a class="item__name" href="#css-&amp; &gt; *">&amp; &gt; *</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>&amp; &gt; * {
+  transform: skewY(-7deg);
+}</code>" data-collapsed="&amp; &gt; * { ... }"><code>&amp; &gt; * { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Only direct children of that parent (&gt; *) And applies the skewY(-7deg) transform to those children</p></div></section><section class="main__item container item" id="undefined-css-padding: 15rem 0;
+  /// background-color: $color_grey-light-1;
+}
+
+
+/// background-size: cover == 100% same
+/// @group API @group description
+.section-book"><h3 class="item__heading"><a class="item__name" href="#css-padding: 15rem 0;
+  /// background-color: $color_grey-light-1;
+}
+
+
+/// background-size: cover == 100% same
+/// @group API @group description
+.section-book">padding: 15rem 0; /// background-color: $color_grey-light-1; } /// background-size: cover == 100% same /// @group API @group description .section-book</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>padding: 15rem 0;
+  /// background-color: $color_grey-light-1;
+}
+
+
+/// background-size: cover == 100% same
+/// @group API @group description
+.section-book {
+  @extend %linear-gradient-primary-100;
+    background-size: cover;
+    padding: 15rem 0;
+}</code>" data-collapsed="padding: 15rem 0;
+  /// background-color: $color_grey-light-1;
+}
+
+
+/// background-size: cover == 100% same
+/// @group API @group description
+.section-book { ... }"><code>padding: 15rem 0;
+  /// background-color: $color_grey-light-1;
+}
+
+
+/// background-size: cover == 100% same
+/// @group API @group description
+.section-book { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>15 rem top and bottom and 0 left and rigth</p></div></section><section class="main__item container item" id="undefined-css-}
+
+
+/// background-size: cover == 100% same
+/// @group API @group description
+.section-book"><h3 class="item__heading"><a class="item__name" href="#css-}
+
+
+/// background-size: cover == 100% same
+/// @group API @group description
+.section-book">} /// background-size: cover == 100% same /// @group API @group description .section-book</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>}
+
+
+/// background-size: cover == 100% same
+/// @group API @group description
+.section-book {
+  @extend %linear-gradient-primary-100;
+    background-size: cover;
+    padding: 15rem 0;
+}</code>" data-collapsed="}
+
+
+/// background-size: cover == 100% same
+/// @group API @group description
+.section-book { ... }"><code>}
+
+
+/// background-size: cover == 100% same
+/// @group API @group description
+.section-book { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>background-color: $color_grey-light-1;</p></div></section></section></section><footer class="footer" role="contentinfo"><div class="container"><div class="footer__project-info project-info"><!-- Name and URL --> <span class="project-info__name">Starter</span><!-- Version --> <span class="project-info__version">- v1.0.0</span><!-- License --> <span class="project-info__license">, under ISC</span></div><a class="footer__watermark" href="http://sassdoc.com"><img src="assets/images/logo_light_inline.svg" alt="SassDoc Logo"></a></div></footer></article><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script><script src="assets/js/main.min.js"></script></body></html>

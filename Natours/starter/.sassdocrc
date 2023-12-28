@@ -1,0 +1,18 @@
+{
+  "title": "My Project",
+  "description": "This is my project",
+  "autofill": ['throw', 'content', 'require'],
+  "theme": "default",
+  "dest": "./docs",
+  "exclude": ["node_modules/**/*", "bower_components/**/*"],
+  "groups": {
+    "undefined": 'Private',
+    "api": 'API',
+    "api/description": "description",
+    "hacks": 'Dirty Hacks & Fixes',
+  },
+  "display": {
+    "access": ['public', 'private'],
+    "alias": true
+  },
+}

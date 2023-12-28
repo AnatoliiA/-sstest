@@ -1,7 +1,7 @@
 .card {
   perspective: 150rem;
-  //color: #fff;
-  /* @type {MozPerspective} */
+  /// color: #fff;
+  /// @type {MozPerspective}
   -moz-perspective: 150rem;
   position: relative;
   height: 52rem;
@@ -9,25 +9,24 @@
   &__side {
     font-weight: bold;
     text-transform: uppercase;
-    //background-color: green;
+    /// background-color: green;
     position: absolute;
-    //size: 3rem;
+    /// size: 3rem;
     height: 52rem;
-    // Time rotation there is most simple translation animation
+    /// Time rotation there is most simple translation animation
     transition: all 0.8s ease;
-    // закругляет кончики елемента
+    /// закругляет кончики елемента
     border-radius: 31px;
-    // 0 x direction,  1.5 , 40 blur
+    /// 0 x direction,  1.5 , 40 blur
     box-shadow: 0 1.5rem 4rem $shadow-b015;
-    // Что связаное с краями
+    /// Что связаное с краями
     overflow: hidden;
 
-
-    //Вадно растянуть е
+    /// Вадно растянуть е
     width: 100%;
     top: 0;
     left: 0;
-    // Important
+    ///  Important
     backface-visibility: hidden;
 
     &--front {
@@ -36,19 +35,19 @@
     }
 
     &--back {
-      //background-color: red;
+      /// background-color: red;
       transform: rotateY(180deg);
 
       &-1 {
-        // space lead to mistake
+        /// space lead to mistake
         background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark)
       }
       &-2 {
-        // space lead to mistake
+        /// space lead to mistake
         background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark)
       }
       &-3 {
-        // space lead to mistake
+        /// space lead to mistake
         background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark)
       }
     }
@@ -56,7 +55,7 @@
   }
 
   &:hover &__side--front {
-    /* Карта разворачивается на 180 */
+    /// Карта разворачивается на 180
     transform: rotateY(-180deg);
   }
 
@@ -64,11 +63,11 @@
     transform: rotateY(0deg);
   }
 
-  // Front side styling
+  /// Front side styling
   &__picture {
     background-size: cover;
     height: 23rem;
-    // смешивает слои
+    /// смешивает слои
     background-blend-mode: screen;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);

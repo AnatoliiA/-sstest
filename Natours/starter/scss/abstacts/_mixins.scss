@@ -1,4 +1,10 @@
+/// Button component.
+/// @group api
+/// @param {string} $bgColor - Background color of the button.
+/// @param {string} $textColor - Text color of the button.
+/// { start: 9, end: 10 }
 @mixin clearfix {
+    /// after
     &::after {
         content: "";
         display: table;

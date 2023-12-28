@@ -74,6 +74,8 @@
     &:link,
     &:visited {
         font-size: $default-font-size;
+        // text
+        text-transform: lowercase !important;
         color: $color-primary;
         display: inline-block;
         text-decoration: none;

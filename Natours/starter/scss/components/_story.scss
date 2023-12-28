@@ -1,0 +1,71 @@
+
+/// @author Kamarali
+/// story wuth 75
+/// @group api @group description
+.story{
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 3rem 7rem rgba($color-black, .1);
+    background-color: rgba($color-white, .4);
+    border-radius: 3px;
+    padding: 6rem 6rem 6rem 9rem;
+    font-size: $default-font-size;
+    transform: skewX(-12deg);
+
+    & > * {
+        transform: skewX(12deg);
+    }
+
+    &__shape{
+        width: 15rem;
+        height: 15rem;
+        float: left;
+        background-color: #7ed56f;
+        transform: translate(-3px);
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        transform: translate(-3rem) skewX(12deg);
+        position: relative;
+    }
+
+    &__img{
+        height: 100%;
+        transform: translate(-4rem)  scale(1.4);
+        backface-visibility: hidden;
+        transition: all .5s;
+    }
+
+    &__text{
+        transform: skewX(12deg);
+    }
+
+    &__caption{
+        // If the ancestor element has position:
+        // relative, the absolutely positioned
+        // element is positioned relative to the relative element. This means its top, right, bottom, and left properties are calculated with respect to the edges of the relatively positioned element.
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        text-align: center;
+        opacity: 0;
+        transition: all .5s;
+        backface-visibility: hidden;
+    }
+
+    &:hover &__caption {
+        opacity: 1;
+        transform: translate(-50%, 20%);
+    }
+
+    &:hover &__img {
+        transform: translate(-4rem)  scale(1);
+        filter: blur(3px) brightness(80%);
+    }
+}
+

@@ -1,11 +1,90 @@
+/// section-features
+/// @group API
+$color-light-80: rgba($color-primary-light, .8);
+$color-dark-80: rgba($color-primary-dark, .8);
+
+/// Extend placeholder with color variables 80
+/// @group API
+%linear-gradient-primary-80 {
+    background-image: linear-gradient(to bottom right, $color-light-80, $color-dark-80);
+}
+/// Extend placeholder with color variables 100
+/// @group API
+%linear-gradient-primary-100 {
+    background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
+}
+
+%linear-linear-two-105deg {
+    background-image: linear-gradient(105deg, rgba($color-white, 0.9) 0%,
+                                              rgba($color-white, 0.9) 50%,
+                                              transperant 50%);
+}
+
+/// Component class
+///  Section styles
+.section-features{
+  padding: 20rem 0;
+  // сочетание дает одно и тоже
+  @extend %linear-gradient-primary-80;
+  background-image: url("../img/nat-4.jpg");
+  background-size: cover;
+  transform: skewY(-7deg);
+   /// Only direct children of that parent (> *)
+   /// And applies the skewY(-7deg) transform to those children
+  & > * {
+     transform: skewY(-7deg);
+  }
+}
+
+/// Here is the description
+/// On several lines if you will
+/// @group API
 .section-about{
   background-color: $color-grey-light-1;
   padding: 25rem 0;
   margin-top: -20vh;
 }
 
+
+/// section-stories
+/// @group API
 .section-tours {
     background-color: $color-grey-light-1;
     padding: 25rem 0 15rem 0;
     margin-top: -10rem;
+}
+
+/// section-stories
+/// @group API @group description
+.section-stories{
+  position: relative;
+  /// 15 rem top and bottom and 0 left and rigth
+  padding: 15rem 0;
+  /// background-color: $color_grey-light-1;
+}
+
+
+/// background-size: cover == 100% same
+/// @group API @group description
+.section-book{
+    @extend %linear-gradient-primary-100;
+    background-size: cover;
+    padding: 15rem 0;
+}
+
+/// свойстов background-size способно мультплицировать картинку
+/// @group API @group description
+.book {
+  background-image: linear-gradient(105deg,   rgba($color-white, 0.9) 0%,
+                                              rgba($color-white, 0.9) 50%,
+                                              transparent 50%), url("../img/nat-10.jpg");
+  background-size: cover;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+  border-radius: 3px;
+  height: 50rem;
+
+  &__form {
+    width: 50%;
+    padding: 6rem;
+  }
 }

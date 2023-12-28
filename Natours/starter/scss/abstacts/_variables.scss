@@ -1,11 +1,12 @@
-// COLORS
+/// Variables COLORS
+/// @group api
 $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
-
 $color-secondary-light: #ffb900;
 $color-secondary-dark: #ff7730;
-
+/// color used throughout the application.
+/// @group api
 $color-tertiary-light: #2998ff;
 $color-tertiary-dark: #5643fa;
 
@@ -30,5 +31,5 @@ $gutter-vertical: 8rem;
 $gutter-vertical-small: 6rem;
 $gutter-horizontal: 6rem;
 
-//shadow
+//shadow color black
 $shadow-b015: rgba($color-black, 0.15)
