@@ -1,6 +1,7 @@
-/// ...
 /// @group API @group components
-/// @todo {_form.scss;}
+/// @todo _form.scss;
+/// commentRange { start: 5, end: 8, }
+////
 .form {
   &__group:not(:last-child){
     margin-bottom: 2rem;
@@ -27,8 +28,10 @@
       border-bottom: 3px solid $color-secondary-dark;
     }
 
-    /// работает в сафари и хром
-    /// :: defended all pseudo elements
+
+/// Работает в Safari и Chrome
+/// Применяется ко всем псевдоэлементам
+/// @group API @group components
     &::-webkit-input-placeholder{
       color: $color-grey-dark-2;
     }
@@ -52,5 +55,74 @@
     opacity: 0;
     visibility: hidden;
     transform: translateY(-4rem);
+  }
+
+  &__radio-group {
+    /// важно делает 50% один по вертикали
+    width: 49%;
+    display: inline-block;
+  }
+
+  /// __radio-input скрывает  от пользователя элемент
+  /// @group API @group components
+  &__radio-input{
+    display: none;
+  }
+  &__radio-label {
+    font-size: $default-font-size;
+    /// делает как рука link указатель
+    cursor: pointer;
+    /// родитель для строки 85 тег radio-button
+    position: relative;
+    ///
+    padding-left : 4.5rem;
+  }
+  /// состоит из двух частей
+  /// это внешняя часть
+  /// @group API @group components
+  /// @todo scss\components\_form.scss;
+  ////
+  &__radio-button {
+    height: 3rem;
+    width: 3rem;
+    border: 5px solid $color-primary;
+    border-radius: 50%;
+    // коректно работает с блоком
+    display: inline-block;
+    // если позиция абсолютная то родитель должен быть relative
+    position: absolute;
+    top: -.4rem;
+    left: 0;
+    /// внутренняя часть
+    /// задается для того что бы отразить центр
+    /// @group API @group components
+    &::after{
+      content: " ";
+      display: block;
+      height: 1.3rem;
+      width: 1.3rem;
+      border-radius: 50%;
+      /// position can absolute
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: $color-primary-dark;
+      /// делаем центр круга не видимым
+      opacity: 0;
+      /// относится к переходам опасити
+      transition: opacity .2s;
+    }
+  }
+  /// `:checked` - это предопределенный CSS псевдокласс, который применяется к чекбоксам или радиокнопкам, которые были отмечены пользователем.
+  /// В приведенном примере, `&__radio-input:checked`
+  /// используется для выбора отмеченной радиокнопки.
+  /// Затем `~` (тильда) соединяет ее с `&__radio-label` - ярлыком, связанным с радиокнопкой.
+  /// Далее, `&__radio-button::after` представляет псевдоэлемент, который будет добавлен после кнопки радио.
+  /// Свойство `opacity: 1;` устанавливает степень прозрачности равной 1, что делает псевдоэлемент видимым. В целом, этот код используется, чтобы применить стиль к элементу псевдоэлемента, созданного с помощью `::after`, при условии, что связанный с ним элемент `&__radio-input` имеет состояние `:checked`.од используется, чтобы применить стиль к элементу псевдоэлемента, созданного с помощью `::after`, при условии, что связанный с ним элемент `&__radio-input` имеет состояние `:checked`.
+  /// Это и есть связь когда мы кликаем на __radio-input:checked то тильда значит что будут связаны
+  /// &__radio-label &__radio-button::after таким образом активируется after с опасити 1
+  &__radio-input:checked ~ &__radio-label &__radio-button::after {
+      opacity: 1;
   }
 }
