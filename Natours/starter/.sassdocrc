@@ -9,6 +9,9 @@
     "undefined": 'Private',
     "api": 'API',
     "api/description": "description",
+    "api/components": "components",
+    "api/pages": "pages",
+    "api/base": "base",
     "hacks": 'Dirty Hacks & Fixes',
   },
   "display": {

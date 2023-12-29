@@ -72,17 +72,21 @@ $color-dark-80: rgba($color-primary-dark, .8);
     padding: 15rem 0;
 }
 
-/// свойстов background-size способно мультплицировать картинку
-/// @group API @group description
+
+/// разметка формы
+/// @group API @group pages
+/// @todo scss\pages\_home.scss;
 .book {
   background-image: linear-gradient(105deg,   rgba($color-white, 0.9) 0%,
                                               rgba($color-white, 0.9) 50%,
                                               transparent 50%), url("../img/nat-10.jpg");
+  // свойство background-size способно мультиплицировать картинку
   background-size: cover;
   box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
   border-radius: 3px;
   height: 50rem;
 
+  // détermine le retrait fr
   &__form {
     width: 50%;
     padding: 6rem;

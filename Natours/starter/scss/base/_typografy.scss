@@ -7,11 +7,14 @@ body {
   padding: 3rem;
 }
 
-/// Button component.
-/// @group Components
+/// отвечает за заголовки
+/// @group API @group base
+/// @todo scss\base\_typografy.scss;
 .heading-secondary {
     font-size: 3.5rem;
     font-weight: 700;
+    // pass 
+    text-transform: uppercase;
     background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
     -webkit-background-clip: text;
     color: transparent;
