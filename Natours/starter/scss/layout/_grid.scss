@@ -1,9 +1,10 @@
 /// story  pass
-/// @group api @group description
+/// @group api @group layout
 /// @todo component/_grid.scss
 .row {
     max-width: $grid-width;
     margin: 0 auto;
+
 
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
@@ -14,7 +15,6 @@
     [class^="col-"] {
          /// background-color: orangered;
          float: left;
-         background-color: $color-grey-light-1;
 
 
         &:not(:last-child) {

@@ -12,6 +12,7 @@
     "api/components": "components",
     "api/pages": "pages",
     "api/base": "base",
+    "api/layout": "layout",
     "hacks": 'Dirty Hacks & Fixes',
   },
   "display": {

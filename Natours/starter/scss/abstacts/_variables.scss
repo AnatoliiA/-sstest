@@ -1,3 +1,5 @@
+
+
 /// Variables COLORS
 /// @group api
 $color-primary: #55c57a;
@@ -12,13 +14,18 @@ $color-tertiary-dark: #5643fa;
 
 /// Blue
 /// @prop {Color} blue [#2196F3]
-/// @group api
+/// @group api @group footer
 $blue: #2196F3;
 $color-grey-light-1: #f7f7f7;
 $color-grey-light-2: #eee;
 
 $color-grey-dark: #777;
 $color-grey-dark-2: #999;
+
+/// Black
+/// @prop {Color} black-3 [#333333]
+/// @group api @group footer
+/// @todo scss\abstacts\_variables.scss;
 $color-grey-dark-3: #333;
 
 $color-white: #fff;
@@ -29,11 +36,28 @@ $color-black: #000;
 $default-font-size: 1.6rem;
 
 
+
+
 // GRID
+/// @group api @group footer
+/// @prop {Length} small [114rem]
 $grid-width: 114rem;
+/// @group api @group footer
+/// @prop {Length} vertical [8rem]
 $gutter-vertical: 8rem;
+
+
+/// @group api @group footer
+/// @prop {Length} small [6rem]
+/// @todo scss\abstacts\_variables.scss;
 $gutter-vertical-small: 6rem;
+
+/// horizontal
+/// @group api @group layout
+/// @prop {Length} horizontal [6rem]
 $gutter-horizontal: 6rem;
+
+
 
 //shadow color black
 $shadow-b015: rgba($color-black, 0.15)
