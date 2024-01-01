@@ -1,0 +1,10 @@
+
+/// Функция принимает 2 параметра - duration и delay
+/// Для delay установлено значение по умолчанию 0
+/// Возвращает строку transition с duration и delay
+/// Если delay не указан - берется значение по умолчанию
+/// @group api
+/// @todo scss\abstacts\_functions.scss;
+@function transition($duration, $delay: 0) {
+  @return all $duration ease, all $delay ease;
+}
