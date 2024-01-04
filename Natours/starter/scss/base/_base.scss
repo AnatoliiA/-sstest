@@ -4,11 +4,40 @@
   box-sizing: border-box;
 }
 
+/// Мы передаем в миксину respond строку
+/// которая сравнивается со строкой $breakpoint
 html{
   font-size: 62.5%;
+
+  //noinspection SassScssResolvedByNameOnly
+  @include responder(tab-land){
+      font-size: 56.26%;
+  }
+
+  //noinspection SassScssResolvedByNameOnly
+  @include responder(tab-port){
+      font-size: 50%;
+  }
+
+  //noinspection SassScssResolvedByNameOnly
+  @include responder(phone){
+      font-size: 30%;
+  }
+
+  //noinspection SassScssResolvedByNameOnly
+  @include responder(big-desktop){
+      font-size: 75%;
+  }
+
 }
 
 body {
   box-sizing: border-box;
+  font-weight: 400;
+  line-height: 1.7;
+  padding: 3rem;
+  @include responder(big-desktop){
+      padding: 0;
+  }
 }
 

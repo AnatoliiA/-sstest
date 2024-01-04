@@ -6,6 +6,11 @@
   padding: 10rem 0;
   font-size: 1.4rem;
 
+  @include responder(tab-port){
+      padding: 8rem 0;
+  }
+
+
   &__logo-box {
     text-align: center;
     margin-bottom: 8rem;
@@ -19,11 +24,18 @@
   &__navigation {
     border-top: 1px solid $color-grey-light-2;
     padding: 2rem;
+
+    @include responder(tab-port){
+      width: 100%;
+      text-align: center;
+    }
+
   }
 
   &__list {
     list-style: none;
     width: 100%;
+
   }
 
   &__item {
@@ -61,6 +73,13 @@
     padding-top: 2rem;
     width: 80%;
     float: right;
+
+    @include responder(tab-port){
+      text-align: justify;
+      width: 100% !important;
+      float: none;
+    }
   }
+
 
 }

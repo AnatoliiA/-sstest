@@ -1,4 +1,3 @@
-
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -19,7 +18,17 @@ body {
     -webkit-background-clip: text;
     color: transparent;
     letter-spacing: .2rem;
-    transition: all .2s;я
+    transition: all .2s;
+
+    //noinspection SassScssResolvedByNameOnly
+    @include responder(phone) {
+        font-size: 2rem;
+    }
+
+    //noinspection SassScssResolvedByNameOnly
+    @include responder(tab-port) {
+        font-size: 2.5rem;
+    }
 
     &:hover {
         transform: skewY(2deg) skewX(1deg) scale(1.1);
@@ -27,32 +36,60 @@ body {
     }
 }
 
+///
 .heading-primary {
+  //noinspection SassScssResolvedByNameOnly
   color: $color-white;
   text-transform: uppercase;
-  margin: 60px;
+  backface-visibility: hidden;
+  margin: 6rem;
+  //noinspection SassScssResolvedByNameOnly
+  @include responder(tab-port) {
+        margin: 2rem;
+  }
+  @include responder(tab-land) {
+        margin: 2rem;
+  }
 
+/// уменьшается
+/// @group API @group layout
+/// @todo scss\base\_typografy.scss;
   &--main {
     display: block;
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 700;
-    letter-spacing: 35px;
+    letter-spacing: 3.5rem;
+
+
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
     /*!*animation-delay: 3s;*!*/
     /*animation-iteration-count: 3;*/
+
+    //noinspection SassScssResolvedByNameOnly
+    @include responder(big-desktop){
+      letter-spacing: 1rem;
+      font-size: 4rem;
+    }
   }
 
+  //noinspection SassScssResolvedByNameOnly
   &--sub {
     display: block;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 400;
-    letter-spacing: 17px;
+    letter-spacing: 1.7rem;
+
+    @include responder(big-desktop){
+      letter-spacing: 0.5rem;
+      font-size: 4rem;
+    }
   }
 
 }
 
+//noinspection SassScssResolvedByNameOnly
 .heading-tertiary {
     font-size: $default-font-size;
     font-weight: 700;

@@ -6,7 +6,7 @@
   ///    зависимый элемент от body
   ///    фактически % это процент от шрифта от базового элемента
   ///    допустим font-size: % --> это от высшего body
-  font-size: 100%;
+  //      font-size: 100%;
   height: 95vh;
   background-image: linear-gradient(
                   to right bottom,
@@ -17,13 +17,22 @@
   background-size: cover;
   background-position: top;
   position: relative;
+  //noinspection CssUnknownProperty
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
 
+  //noinspection SassScssResolvedByNameOnly
+  @include responder(tab-port) {
+    //noinspection CssUnknownProperty
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 50vh, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 50vh, 0% 100%);
+    height: 60vh;
+  }
+
   &__logo-box {
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 4rem;
+    left: 4rem;
     background: #eb2f64;
     ////
     ///    em относительно например длинны берет от текста (font-size) по умолчанию в элементе

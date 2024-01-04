@@ -1,4 +1,4 @@
-/// story  pass
+/// grid
 /// @group api @group layout
 /// @todo component/_grid.scss
 .row {
@@ -8,17 +8,40 @@
 
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
+        //noinspection SassScssResolvedByNameOnly
+        @include responder(tab-port) {
+            margin-right: 0 ;
+            margin-bottom: $gutter-vertical-small;
+        }
+    }
+
+
+    @include responder(tab-port) {
+        width: 100%;
+        //noinspection SassScssResolvedByNameOnly
+        margin-bottom: $gutter-vertical-small;
+        padding: 0 3rem;
     }
 
     @include clearfix;
 
     [class^="col-"] {
-         /// background-color: orangered;
-         float: left;
-
+        // background-color: orangered;
+        float: left;
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
+
+            //noinspection SassScssResolvedByNameOnly
+            @include responder(tab-port) {
+                margin-right: 0;
+                margin-bottom: $gutter-vertical-small;
+            }
+        }
+
+        //noinspection SassScssResolvedByNameOnly
+        @include responder(tab-port) {
+            width: 100% !important;
         }
     }
 

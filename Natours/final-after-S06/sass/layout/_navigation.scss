@@ -42,8 +42,8 @@
             top: 4.5rem;
             right: 4.5rem;
         }
-
-        @include respond(phone) {
+        //noinspection SassScssResolvedByNameOnly
+        @include responder(phone) {
             top: 3.5rem;
             right: 3.5rem;
         }
