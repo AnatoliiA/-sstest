@@ -1,26 +1,38 @@
 {
-  "name": "natours",
+  "name": "starter",
   "version": "1.0.0",
-  "description": "Landing page for natours",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:sass": "sass --watch --poll scss/main.scss:css/main.css --style expanded --verbose",
     "devserver": "live-server",
     "start": "npm-run-all --parallel devserver watch:sass",
-    
-    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
-    "concat:css": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css",
-    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
-    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
+    "comple:sass": "sass scss/main.scss:css/main.css --style expanded --verbose",
+    "concat:css": "concat -o css/style.concat.css ???",
+    "prefix:css": "postcss --use autoprefixer -b 'last 20 version' css/main.css -o css/style.prefix.css",
+    "compress:css": "sass --color css/main.css:css/min.css --style=compressed",
+    "build:css": "npm-run-all comple:sass prefix:css compress:css "
   },
-  "author": "Jonas",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "lodash": "^4.17.21",
+    "sassdoc-theme-flippant": "^0.0.1",
+    "sassdoc-theme-rest": "^1.0.3"
+  },
   "devDependencies": {
-    "autoprefixer": "^7.1.4",
+    "autoprefixer": "^10.4.16",
     "concat": "^1.0.3",
-    "node-sass": "^4.5.3",
-    "npm-run-all": "^4.1.1",
-    "postcss-cli": "^4.1.1"
+    "eslint": "^8.22.0",
+    "eslint-plugin-css": "^0.8.1",
+    "nodemon": "^3.0.2",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^11.0.0",
+    "prettier": "^3.1.1",
+    "sass": "^1.69.5",
+    "sassdoc-theme-neat": "^0.0.2"
   }
 }
